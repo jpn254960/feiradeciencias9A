@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    border: none;
+    margin: 0pc;
+    background-image: url('imgs/fundo_1.png'); /* Caminho da imagem */
+    background-size: cover;          /* Faz a imagem cobrir todo o fundo */
+    background-position: center;     /* Centraliza a imagem */
+    background-repeat: no-repeat;    /* Evita repetição da imagem */
+    background-attachment: fixed;    /* Mantém a imagem fixa ao rolar */
+    color: white;
+}
+
+#barra_de_cima{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6vh;
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    color: white;
+}
+.guia{
+    text-align: center;
+    font-size: 1vw;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+.guia:hover{
+    color: #05c40b;
+    text-decoration:underline;
+    transition: color 0.3s;
+}
+#logo{
+    margin-left: 60vw;
+
+}
+
+
+
+#fundo{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+}
