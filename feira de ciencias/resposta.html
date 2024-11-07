@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resposta.css">
+    <title>soluções</title>
+</head>
+<body>
+
+    <section id="barra_de_cima">
+        <img src="imgs/logo.png" alt="dads" id="logo">
+        <a href="inicio.html" class="guia" id="inicio_nome">INICIO</a>
+        <a href="importancia.html" class="guia">IMPORTANCIA</a>
+        <a href="problemas.html" class="guia">PROBLEMAS</a>
+        <a href="resposta.html" class="guia">PROBLEMAS</a>
+
+    </section>
+
+    <h1 id="titulo">soluções para<br>a poluição do solo<br>melhorar</h1>
+    <img src="imgs/fundo_solução.png" alt="" id="fundo">
+    <section id="respostas">
+        <section>
+        <h1 id="titulo1">compostagem</h1>
+        <p id="subtitulo1">A compostagem de resíduos orgânicos (como restos de alimentos e folhas) cria adubo natural, devolvendo nutrientes ao solo e melhorando sua estrutura.</p>
+        </section>
+        <section>
+        <h1 id="titulo2">Reciclagem </h1>
+        <p id="subtitulo2">ransformar restos vegetais e agrícolas em fertilizantes naturais reduz a necessidade de fertilizantes químicos e ajuda a nutrir o solo de forma sustentável.</p>
+        </section>
+        <section>
+        <h1 id="titulo3">Adubação Verde</h1>
+        <p id="subtitulo3"> Plantar espécies específicas, como leguminosas, ajuda a enriquecer o solo com nitrogênio e outros nutrientes, restaurando sua fertilidade.</p>
+        </section>
+    </section>
+
+    <h1 id="titulo_cp">alimentos para usar na  composteira</h>
+    <img src="imgs/alimentos1.jpg" alt="" id="img">
+    <h1 id="objeto">Cascas de Frutas</h1>
+    <p id="descriçao">Ricas em nutrientes como potássio e fósforo, as cascas de frutas ajudam a enriquecer o composto e são facilmente decompostas.</p>
+    
+    <section id="bolinhas">
+        <h1 id="bola1" class="bolas" onclick="alterar(1)"></h1>
+        <h1 id="bola2" class="bolas" onclick="alterar(2)"></h1>
+        <h1 id="bola3" class="bolas" onclick="alterar(3)"></h1>
+        <h1 id="bola4" class="bolas" onclick="alterar(4)"></h1>
+    </section>
+</body>
+<script>
+    var anterior=1
+    function alterar(numero){
+        var imagens=['imgs/alimentos1.jpg','imgs/alimentos2.jpg','imgs/alimentos3.jpg','imgs/alimentos4.jpg']
+        var objeto=['Cascas de Frutas','Borra de Café','Restos de Verduras e Legumes','Cascas de Ovo']
+        var textos=['Ricas em nutrientes como potássio e fósforo, as cascas de frutas ajudam a enriquecer o composto e são facilmente decompostas.','Rica em nitrogênio, a borra de café é excelente para a compostagem, além de ajudar a neutralizar odores e repelir pragas.','Folhas de alface, cascas de cenoura e outros restos de vegetais fornecem nitrogênio e minerais essenciais para a compostagem.','Trituradas, elas adicionam cálcio ao composto, ajudando a balancear o pH e nutrir o solo.']
+        document.getElementById(`bola${anterior}`).style.backgroundColor='black'
+        document.getElementById(`bola${numero}`).style.backgroundColor='white'
+        document.getElementById('img').src=imagens[numero-1]
+        document.getElementById('objeto').innerText=objeto[numero-1]
+        document.getElementById('descriçao').innerText=textos[numero-1]
+        anterior=numero
+    }
+
+</script>
+</html>
