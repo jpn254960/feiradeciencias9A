@@ -33,7 +33,7 @@ body{
     color: white;
 }
 .guia:hover{
-    color: #008205;
+    color: #4CAF50;
     text-decoration:underline;
     transition: color 0.3s;
 }
@@ -127,10 +127,30 @@ body{
 .bolas{
     width: 1vw;
     height: 1vw;
-    background-color: black;
+    background-color: white;
     border-radius: 100%;
     border: 0.5vh black solid;
+    transition: background-color 0.5s;
 }
 #bola1{
-    background-color: transparent;
+    background-color: black;
 }
+/* Barra de rolagem com fundo e thumb arredondada */
+::-webkit-scrollbar {
+    width: 1vw;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 1vw;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 1vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #388E3C;
+  }
+  

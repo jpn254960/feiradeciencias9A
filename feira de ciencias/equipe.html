@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>equipe</title>
+    <link rel="stylesheet" href="equipe.css">
 </head>
 <body>
     
+    <section id="barra_de_cima">
+        <img src="imgs/logo.png" alt="dads" id="logo">
+        <a href="inicio.html" class="guia" id="inicio_nome">INICIO</a>
+        <a href="importancia.html" class="guia">IMPORTANCIA</a>
+        <a href="problemas.html" class="guia">PROBLEMAS</a>
+        <a href="resposta.html" class="guia">SOLUÇÕES</a>
+        <a href="equipe.html" class="guia">EQUIPE</a>
+    </section>
+
+    <h1 id="grupo">grupo 5</h1>
+    <h1 id="bt" onclick="passar()">></h1>
+    <img src="imgs/alimentos1.jpg" alt="" id="imagem">
+    <h1 id="titulo">objetivo:</h1>
+    <p id="objetivo">desenvolver um site ou aplicativo para concientizar as pessoas sobre a importancia do solo</p>
+    <h1 id="titulo2">galeria</h1>
+    <section id="galeria">
+        <img src="imgs/alimentos2.jpg" alt="" id="img1" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img2" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img3" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img4" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img5" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img6" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img7" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img8" class="imagem">
+        <img src="imgs/alimentos2.jpg" alt="" id="img9" class="imagem">
+    </section>
 </body>
+<script>
+    var grupo=5
+    function passar(){
+        var texto=['ada','dd','gg','pp','d']
+        if (grupo==5){
+            grupo=1
+        }else{
+            grupo++
+        }
+        document.getElementById('objetivo').innerText=texto[grupo-1]
+        document.getElementById('grupo').innerText=`grupo ${grupo}`
+        document.getElementById('imagem').src=`grupos/gr${grupo}/fundo.png`
+        for (c=1;c!=10;c++){
+            console.log(c)
+            document.getElementById(`img${c}`).src=`grupos/gr${grupo}/fundo.png`
+        }
+
+    }
+</script>
 </html>

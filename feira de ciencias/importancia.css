@@ -123,13 +123,13 @@
         height: 30vw;
         object-fit: cover;
         position: absolute;
-        top: 20vh;
+        top: 15vh;
         left: 10vw;
     }
     #titulo1{
         font-size: 2vw;
         position: absolute;
-        top: 50vh;
+        top: 42vh;
         left: 45vw;
         color: #245a1e;
         
@@ -139,13 +139,13 @@
         font-size: 1.2vw;
         position: absolute;
         position: absolute;
-        top: 57vh;
+        top: 49vh;
         left: 45vw;
     }
     #titulo2{
         font-size: 2vw;
         position: absolute;
-        top: 18vh;
+        top: 10vh;
         left: 45vw;
         color: #245a1e;
     }
@@ -153,7 +153,7 @@
         width: 40vw;
         font-size: 1.2vw;
         position: absolute;
-        top: 25vh;
+        top: 17vh;
         left: 45vw;
     }
 }
