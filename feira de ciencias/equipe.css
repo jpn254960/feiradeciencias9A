@@ -1,3 +1,18 @@
+#galeria{
+    position: absolute;
+    top: 20vh;
+    left: 60vw;
+    width: 5vw;
+    height: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2vh;
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 2vw;
+} 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 #barra_de_cima{
@@ -5,7 +20,7 @@
     flex-direction: row;
     width: 100vw;
     height: 6vh;
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     margin: auto;
     position: fixed;
@@ -17,7 +32,7 @@
     font-size: 1vw;
     margin: auto;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .guia:hover{
     color: #008205;
@@ -37,70 +52,108 @@
     font-style: normal;
 }
 
-#grupo{
-    font-size: 2.3vw;
-    position: absolute;
-    top: 11vh;
-    left: 7vw;
-    text-transform: uppercase;
+body{
+    overflow: hidden;
+    border: none;
+    margin: 0pc;
+    height: 100vh;
+    background-image: url('imgs/fundo_problemas.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#imagem{
+
+
+#painel_grupo{
     position: absolute;
-    top: 20vh;
-    left: 7vw;
+    background-color: rgba(0, 0, 0, 0.613);
+    top: 0px;
+    left: 0px;
     width: 40vw;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 1vh;
+    height: 100vh;
+
 }
-#titulo{
-    font-size: 1.7vw;
-    text-transform: uppercase;
+#grupo{
     position: absolute;
-    top: 70vh;
-    left: 7vw;
+    color: white;
+    top: 15vh;
+    left: 4vw;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+#nomes{
+    width: 15vw;
+    position: absolute;
+    top: 35vh;
+    left: 4vw;
+    font-size: 1vw;
+    color: white;
 }
 #objetivo{
-    color: #424242;
-    font-size: 1.2vw;
     position: absolute;
-    top:74vh;
-    left: 7vw;
-    width: 30vw;
+    top: 50vh;
+    left:4vw;
+    font-size: 1.4vw;
+    color: white;
 }
-.imagem{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 1vw;
+#txt{
+    position: absolute;
+    top: 53vh;
+    left: 4vw;
+    width: 30vw;
+    color: rgba(255, 255, 255, 0.953);
+    font-size: 1.3vw;
+}
+#titulo{
+    position: absolute;
+    top: 13vh;
+    left: 69.4vw;
+    color: white;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+
 }
 #galeria{
     position: absolute;
     top: 20vh;
     left: 60vw;
-    width: 5vw;
-    height: 5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2vh;
-    width: 30vw;
-    height: 30vw;
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 1vh;
+} 
+.img{
+    width:8vw ;
+    height: 8vw;
+    object-fit: cover;
+    border-radius: 1vw;
 }
-#titulo2{
-    font-size: 5vh;
+#img_grupo{
+    width: 15vw;
+    height: 10vw;
+    background-color: wheat;
     position: absolute;
-    top: 9vh;
-    left: 71vw;
-    text-transform: uppercase;
+    top: 70vh;
+    left: 74vw;
+    border-radius: 1vh;
+    object-fit: cover;
+    box-shadow: 0pc 0pc 1vh black;
 }
-#bt{
-    font-size: 2.3vw;
+#passar{
     position: absolute;
-    top:11vh;
-    left: 19vw;
-    cursor: pointer;
-    cursor:default;
+    top: 65vh;
+    left: 90vw;
+    font-size: 5vw;
+    color: rgba(255, 255, 255, 0.678);
 }
-#bt:active{
-    color: #424242;
+#numero{
+    position: absolute;
+    top: 65vh;
+    left: 70vw;
+    font-size: 5vw;
+    color: rgba(255, 255, 255, 0.678);
 }

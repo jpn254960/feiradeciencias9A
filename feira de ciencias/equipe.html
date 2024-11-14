@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="equipe.css">
 </head>
 <body>
-    
+
     <section id="barra_de_cima">
         <img src="imgs/logo.png" alt="dads" id="logo">
         <a href="inicio.html" class="guia" id="inicio_nome">INICIO</a>
@@ -17,41 +17,50 @@
         <a href="equipe.html" class="guia">EQUIPE</a>
     </section>
 
-    <h1 id="grupo">grupo 5</h1>
-    <h1 id="bt" onclick="passar()">></h1>
-    <img src="imgs/alimentos1.jpg" alt="" id="imagem">
-    <h1 id="titulo">objetivo:</h1>
-    <p id="objetivo">desenvolver um site ou aplicativo para concientizar as pessoas sobre a importancia do solo</p>
-    <h1 id="titulo2">galeria</h1>
-    <section id="galeria">
-        <img src="imgs/alimentos2.jpg" alt="" id="img1" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img2" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img3" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img4" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img5" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img6" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img7" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img8" class="imagem">
-        <img src="imgs/alimentos2.jpg" alt="" id="img9" class="imagem">
+    <section id="painel_grupo">
+        <h1 id=grupo>grupo 5</h1>
+        <p id="nomes">joão, lucas fabiano, luiz, renato, kauã, tarso</p>
+        <h1 id="objetivo">OBJETIVO:</h1> 
+        <p id="txt">Apresentar os dados obtidos nos experimentos e explicar como os parâmetros vistos, (concentração de fósforo, nitrogênio, potássio e o pH) afetam o cultivo no solo, tanto para mais como para menos.
+        </p>      
     </section>
+    <h1 id="titulo">galeria</h1>
+    <section id="galeria">
+        <img src="" alt="" id="img1" class="img">
+        <img src="" alt="" id="img2" class="img">
+        <img src="" alt="" id="img3" class="img">
+        <img src="" alt="" id="img4" class="img">
+        <img src="" alt="" id="img5" class="img">
+        <img src="" alt="" id="img6" class="img">
+    </section> 
+
+    <section id="carosel">
+        <img id="img_grupo" src="" alt="">
+        <h1 id="numero"></h1>
+        <h1 id="passar" onclick="passar()">></h1>
+        
+    </section>
+
 </body>
 <script>
     var grupo=5
+    var txt=['Apresentar os dados obtidos nos experimentos e explicar como os parâmetros vistos, (concentração de fósforo, nitrogênio, potássio e o pH) afetam o cultivo no solo, tanto para mais como para menos.','Pesquisar como a poluição do solo afeta os lençóis freáticos e alternativas para minimizar esse problema. ( Falar sobre os problemas causados pelo excesso de fertilizantes no solo)','Pesquisar sobre processo de decomposição da matéria orgânica e como ela pode ser usada como adubo.','Falar sobre como a poluição do solo afeta a germinação, trazer alternativas para esse problema (coleta seletiva, reciclagem, dentre outros).','Recolher todos os dados levantados pelos outros grupos e apresenta-los no site da sala de forma criativa. (Podemos usar o projetor no dia)']
+    var grupos=['Kamilly, Danielle, Nilmar, Daphyne, Lucas Torato e Caue','Guilherme Oliveira, Guilherme Vitor, Heloise, Bianca e Muril','Julia Horat, Julia Bracali, Julia Pascoal, Agatha, Marina e Sabrina.',' Emmanuela, Ana Julia, Rebeca, Maria Eduarda, Isabelly e Aymee','João Pedro, Kauã, Renato, Tarso, Luiz Silvio e Lucas Fabiano']
     function passar(){
-        var texto=['ada','dd','gg','pp','d']
         if (grupo==5){
             grupo=1
         }else{
             grupo++
         }
-        document.getElementById('objetivo').innerText=texto[grupo-1]
+        document.getElementById('numero').innerText=`${grupo}`
+        document.getElementById('img_grupo').src=`grupos/gr${grupo}/grupo.jpeg`
         document.getElementById('grupo').innerText=`grupo ${grupo}`
-        document.getElementById('imagem').src=`grupos/gr${grupo}/fundo.png`
-        for (c=1;c!=10;c++){
-            console.log(c)
-            document.getElementById(`img${c}`).src=`grupos/gr${grupo}/fundo.png`
+        document.getElementById('nomes').innerText=grupos[grupo-1]
+        document.getElementById('txt').innerText=txt[grupo-1]
+        for (c=1;c!=7;c++){
+            document.getElementById(`img${c}`).src=`grupos/gr${grupo}/grupo.jpeg`
         }
-
     }
+    passar()
 </script>
 </html>

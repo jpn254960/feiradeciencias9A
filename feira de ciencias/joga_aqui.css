@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+        border: none;
+        margin: 0pc;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        overflow-x: hidden;
+    }
+    #distancias{
+        position: absolute;
+        top: 1vh;
+        left: 2vw;
+        width: 100vw;
+        background-color: white;
+    }
+    #local{
+        background-color: white;
+        box-shadow: 0pc 0pc 0.3vh black ;
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+    }

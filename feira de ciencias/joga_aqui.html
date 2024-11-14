@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joga aqui</title>
+    <link rel="stylesheet" href="joga_aqui.css">
+</head>
+<body>
+    <section id="distancias">        
+        <section id="local">
+            <h1 id="distancia"></h1>
+        </section>
+        <section id="local">
+            <h1 id="distancia">dadad</h1>
+        </section>
+    </section>
+</body>
+<script>
+    function getUserLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            const userLat = position.coords.latitude;
+            const userLon = position.coords.longitude;
+            const destinationLat = -23.5505; // substitua pela latitude desejada
+            const destinationLon = -46.6333; // substitua pela longitude desejada
+            const distance = calculateDistance(userLat,userLon,destinationLat,destinationLon)
+            document.getElementById('distancia').innerText=`a distancia em km é de aproximadamente ${parseInt(distance)}`
+        });
+    } else {
+        alert("Geolocalização não é suportada pelo seu navegador.");
+    }
+   
+}
+ function toRad(value) {
+    return value * Math.PI / 180;
+}
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371000; // Raio da Terra em metros
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+              Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    
+    return R * c; // Distância em metros
+}
+getUserLocation()
+</script>
+</html>
