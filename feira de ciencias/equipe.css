@@ -80,6 +80,7 @@ body{
     left: 4vw;
     font-size: 5vw;
     text-transform: uppercase;
+    font-weight: bold;
 }
 #nomes{
     width: 15vw;
@@ -95,6 +96,7 @@ body{
     left:4vw;
     font-size: 1.4vw;
     color: white;
+    font-weight: bold;
 }
 #txt{
     position: absolute;

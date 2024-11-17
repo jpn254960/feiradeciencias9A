@@ -61,6 +61,7 @@ body{
     color: white;
     font-size: 7vh;
     margin-top: 15vh;
+    font-weight: bold;
 }
 #texto{
     width: 40vw;
