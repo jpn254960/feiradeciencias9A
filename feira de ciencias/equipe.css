@@ -4,6 +4,17 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    
+}
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 @media screen and (max-width: 768px){
     body{
@@ -160,7 +171,7 @@
     }
     #painel_grupo{
         position: absolute;
-        top: 20vh;
+        top: 10vh;
         color: white;
     }
     #grupo{
@@ -192,13 +203,14 @@
         position: absolute;
         display: flex;
         flex-direction: row;
-        top: 70vh;
+        top: 55vh;
     }
     #img_grupo{
         width: 50vw;
         height: 20vh;
         margin-left: 5vw;
         border-radius: 1vh;
+        object-fit: cover;
 
     }
     #numero{

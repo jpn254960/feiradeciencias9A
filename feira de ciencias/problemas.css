@@ -165,7 +165,7 @@
         margin-bottom: 0pc;
     }
 }
-@media screen and (min-width:1025) {
+@media screen and (min-width:1025px) {
     #barra_de_cima{
         display: flex;
         flex-direction: row;
