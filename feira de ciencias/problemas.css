@@ -140,7 +140,8 @@
     }
     #texto{
         margin: auto;
-        margin-top: 3vh;
+        position: absolute;
+        top: 22vh;
         text-align: left;
         font-size: 4vw;
         width: 94vw;
@@ -150,7 +151,8 @@
         width: 70vw;
         font-size: 2.2vh;
         height: 6vh;
-        margin-top: 4vh;
+        position: absolute;
+        top: 26vh;
         margin-left:4vw;
         background-color: #006403;
         text-transform: uppercase;
