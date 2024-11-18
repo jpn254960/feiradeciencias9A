@@ -1,161 +1,370 @@
-#galeria{
-    position: absolute;
-    top: 20vh;
-    left: 60vw;
-    width: 5vw;
-    height: 5vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2vh;
-    width: 10vw;
-    height: 10vw;
-    object-fit: cover;
-    border-radius: 2vw;
-} 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-#barra_de_cima{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 6vh;
-    background-color: transparent;
-    text-align: center;
-    margin: auto;
-    position: fixed;
-    top: 0px;
-    color: black;
-}
-.guia{
-    text-align: center;
-    font-size: 1vw;
-    margin: auto;
-    text-decoration: none;
-    color: white;
-}
-.guia:hover{
-    color: #008205;
-    text-decoration:underline;
-    transition: color 0.3s;
-}
-#logo{
-    margin-left: 60vw;
-}
-
-
-
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
+@media screen and (max-width: 768px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        border: none;
+        background-image: url('imgs/fundo_problemas.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
 
-body{
-    overflow: hidden;
-    border: none;
-    margin: 0pc;
-    height: 100vh;
-    background-image: url('imgs/fundo_problemas.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    #galeria,#titulo{
+        display: none;
+    }
+
+    #barra_de_cima{
+        top: 0px;
+        position: fixed;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #01010197;
+        box-shadow: 0px 0px 1vh black;
+        text-align: center;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: 1vw;
+        width: 6vw;
+        height: 6vw;
+    }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 0.2vh;
+        text-decoration: none;
+        color: white;
+    }
+    #fundo{
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #01010155;
+        text-align: center;
+    }
+    #painel_grupo{
+        position: absolute;
+        top: 20vh;
+        color: white;
+    }
+    #grupo{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 5vw;
+        font-size: 5vh;
+        margin-bottom: 0px;
+    }
+    #nomes{
+        margin-top: 1vh;
+        margin-left: 5vw;
+        width:80vw;
+    }
+    #objetivo{
+        text-align: left;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        font-weight: bold;
+
+        margin-bottom: 0px;
+    }
+    #txt{
+        margin-top: 0pc;
+        margin-left: 5vw;
+        width: 80vw;
+    }
+    #carosel{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 70vh;
+    }
+    #img_grupo{
+        width: 40vw;
+        height: 20vh;
+        margin-left: 5vw;
+        border-radius: 1vh;
+
+    }
+    #numero{
+        font-size: 7vh;
+        margin-left: 5vw
+    }
+    #passar{
+        font-size: 7vh;
+        margin-left: 5vw;
+    }
 }
 
+@media screen and (max-width:480px){    
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        border: none;
+        background-image: url('imgs/fundo_problemas.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
 
-#painel_grupo{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.613);
-    top: 0px;
-    left: 0px;
-    width: 40vw;
-    height: 100vh;
+    #galeria,#titulo{
+        display: none;
+    }
+
+    #barra_de_cima{
+        top: 0px;
+        position: fixed;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #01010197;
+        box-shadow: 0px 0px 1vh black;
+        text-align: center;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: 1vw;
+        width: 6vw;
+        height: 6vw;
+    }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 0.2vh;
+        text-decoration: none;
+        color: white;
+    }
+    #fundo{
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #01010155;
+        text-align: center;
+    }
+    #painel_grupo{
+        position: absolute;
+        top: 20vh;
+        color: white;
+    }
+    #grupo{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 5vw;
+        font-size: 5vh;
+        margin-bottom: 0px;
+    }
+    #nomes{
+        margin-top: 1vh;
+        margin-left: 5vw;
+        width:80vw;
+    }
+    #objetivo{
+        text-align: left;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        font-weight: bold;
+
+        margin-bottom: 0px;
+    }
+    #txt{
+        margin-top: 0pc;
+        margin-left: 5vw;
+        width: 80vw;
+    }
+    #carosel{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 70vh;
+    }
+    #img_grupo{
+        width: 50vw;
+        height: 20vh;
+        margin-left: 5vw;
+        border-radius: 1vh;
+
+    }
+    #numero{
+        font-size: 7vh;
+        margin-left: 5vw
+    }
+
+    #passar{
+        font-size: 7vh;
+        margin-left: 5vw;
+    }
+
 
 }
-#grupo{
-    position: absolute;
-    color: white;
-    top: 15vh;
-    left: 4vw;
-    font-size: 5vw;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-#nomes{
-    width: 15vw;
-    position: absolute;
-    top: 35vh;
-    left: 4vw;
-    font-size: 1vw;
-    color: white;
-}
-#objetivo{
-    position: absolute;
-    top: 50vh;
-    left:4vw;
-    font-size: 1.4vw;
-    color: white;
-    font-weight: bold;
-}
-#txt{
-    position: absolute;
-    top: 53vh;
-    left: 4vw;
-    width: 30vw;
-    color: rgba(255, 255, 255, 0.953);
-    font-size: 1.3vw;
-}
-#titulo{
-    position: absolute;
-    top: 13vh;
-    left: 69.4vw;
-    color: white;
-    font-size: 1.5vw;
-    text-transform: uppercase;
+@media screen and (min-width:1025px) {
+    #galeria{
+        position: absolute;
+        top: 20vh;
+        left: 60vw;
+        width: 5vw;
+        height: 5vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2vh;
+        width: 10vw;
+        height: 10vw;
+        object-fit: cover;
+        border-radius: 2vw;
+    } 
+    
 
-}
-#galeria{
-    position: absolute;
-    top: 20vh;
-    left: 60vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2vh;
-    width: 10vw;
-    height: 10vw;
-    object-fit: cover;
-    border-radius: 1vh;
-} 
-.img{
-    width:8vw ;
-    height: 8vw;
-    object-fit: cover;
-    border-radius: 1vw;
-}
-#img_grupo{
-    width: 15vw;
-    height: 10vw;
-    background-color: wheat;
-    position: absolute;
-    top: 70vh;
-    left: 74vw;
-    border-radius: 1vh;
-    object-fit: cover;
-    box-shadow: 0pc 0pc 1vh black;
-}
-#passar{
-    position: absolute;
-    top: 65vh;
-    left: 90vw;
-    font-size: 5vw;
-    color: rgba(255, 255, 255, 0.678);
-}
-#numero{
-    position: absolute;
-    top: 65vh;
-    left: 70vw;
-    font-size: 5vw;
-    color: rgba(255, 255, 255, 0.678);
+    #barra_de_cima{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 6vh;
+        background-color: transparent;
+        text-align: center;
+        margin: auto;
+        position: fixed;
+        top: 0px;
+        color: black;
+    }
+    .guia{
+        text-align: center;
+        font-size: 1vw;
+        margin: auto;
+        text-decoration: none;
+        color: white;
+    }
+    .guia:hover{
+        color: #008205;
+        text-decoration:underline;
+        transition: color 0.3s;
+    }
+    #logo{
+        margin-left: 60vw;
+    }
+
+
+    body{
+        overflow: hidden;
+        border: none;
+        margin: 0pc;
+        height: 100vh;
+        background-image: url('imgs/fundo_problemas.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    #painel_grupo{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.613);
+        top: 0px;
+        left: 0px;
+        width: 40vw;
+        height: 100vh;
+
+    }
+    #grupo{
+        position: absolute;
+        color: white;
+        top: 15vh;
+        left: 4vw;
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #nomes{
+        width: 15vw;
+        position: absolute;
+        top: 35vh;
+        left: 4vw;
+        font-size: 1vw;
+        color: white;
+    }
+    #objetivo{
+        position: absolute;
+        top: 50vh;
+        left:4vw;
+        font-size: 1.4vw;
+        color: white;
+        font-weight: bold;
+    }
+    #txt{
+        position: absolute;
+        top: 53vh;
+        left: 4vw;
+        width: 30vw;
+        color: rgba(255, 255, 255, 0.953);
+        font-size: 1.3vw;
+    }
+    #titulo{
+        position: absolute;
+        top: 13vh;
+        left: 69.4vw;
+        color: white;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+
+    }
+    #galeria{
+        position: absolute;
+        top: 20vh;
+        left: 60vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2vh;
+        width: 10vw;
+        height: 10vw;
+        object-fit: cover;
+        border-radius: 1vh;
+    } 
+    .img{
+        width:8vw ;
+        height: 8vw;
+        object-fit: cover;
+        border-radius: 1vw;
+    }
+    #img_grupo{
+        width: 15vw;
+        height: 10vw;
+        background-color: wheat;
+        position: absolute;
+        top: 70vh;
+        left: 74vw;
+        border-radius: 1vh;
+        object-fit: cover;
+        box-shadow: 0pc 0pc 1vh black;
+    }
+    #passar{
+        position: absolute;
+        top: 65vh;
+        left: 90vw;
+        font-size: 5vw;
+        color: rgba(255, 255, 255, 0.678);
+    }
+    #numero{
+        position: absolute;
+        top: 65vh;
+        left: 70vw;
+        font-size: 5vw;
+        color: rgba(255, 255, 255, 0.678);
+    }
 }

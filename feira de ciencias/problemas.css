@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* celular */
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -7,86 +7,241 @@
     font-style: normal;
 }
 
-#barra_de_cima{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 6vh;
-    text-align: center;
-    margin: auto;
-    position: fixed;
-    top: 0px;
-    color: white;
 
+@media screen and (max-width: 768px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        border: none;
+        background-image: url('imgs/fundo_problemas.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    #barra_de_cima{
+        position: fixed;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #01010132;
+        box-shadow: 0px 0px 1vh black;
+        text-align: center;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: 1vw;
+        width: 6vw;
+        height: 6vw;
+    }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 0.4vh;
+        text-decoration: none;
+        color: white;
+    }
+
+    #caixa{
+        width:100vw;
+        position: absolute;
+        bottom: 0pc;
+        height: 100vh;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #titulo{
+        font-size: 4vh;
+        width: 90vw;
+        margin: auto;
+        margin-top: 14vh;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #texto{
+        margin: auto;
+        margin-top: 3vh;
+        text-align: left;
+        font-size: 3vw;
+        width: 90vw;
+    }
+    #bt{
+        
+        width: 60vw;
+        font-size: 2.9vh;
+        height: 10vh;
+        margin-top: 6vh;
+        margin-left:4vw;
+        background-color: #006403;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 1vh;
+        margin-bottom: 0pc;
+    }
 }
-.guia{
-    text-align: center;
-    font-size: 1vw;
-    margin: auto;
-    text-decoration: none;
-    color: white;
+@media screen and (max-width:480px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        border: none;
+        background-image: url('imgs/fundo_problemas.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    #barra_de_cima{
+        position: fixed;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #01010132;
+        box-shadow: 0px 0px 1vh black;
+        text-align: center;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: 1vw;
+        width: 6vw;
+        height: 6vw;
+    }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 0.4vh;
+        text-decoration: none;
+        color: white;
+    }
+
+    #caixa{
+        width:100vw;
+        position: absolute;
+        bottom: 0pc;
+        height: 100vh;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #titulo{
+        font-size: 4vh;
+        width: 90vw;
+        margin: auto;
+        margin-top: 14vh;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #texto{
+        margin: auto;
+        margin-top: 3vh;
+        text-align: left;
+        font-size: 4vw;
+        width: 94vw;
+    }
+    #bt{
+        
+        width: 70vw;
+        font-size: 2.2vh;
+        height: 6vh;
+        margin-top: 4vh;
+        margin-left:4vw;
+        background-color: #006403;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 1vh;
+        margin-bottom: 0pc;
+    }
 }
-.guia:hover{
-    color: #008205;
-    text-decoration:underline;
-    transition: color 0.3s;
-}
-#logo{
-    margin-left: 60vw;
-}
+@media screen and (min-width:1025) {
+    #barra_de_cima{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 6vh;
+        text-align: center;
+        margin: auto;
+        position: fixed;
+        top: 0px;
+        color: white;
+
+    }
+    .guia{
+        text-align: center;
+        font-size: 1vw;
+        margin: auto;
+        text-decoration: none;
+        color: white;
+    }
+    .guia:hover{
+        color: #008205;
+        text-decoration:underline;
+        transition: color 0.3s;
+    }
+    #logo{
+        margin-left: 60vw;
+    }
 
 
-body{
-    margin: 0px;
-    border: none;
-    height: 95vh;
-    background-image: url('imgs/fundo_problemas.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#caixa{
-    width: 50vw;
-    height: 100vh;
-    position: absolute;
-    right: 0pc;
-    background-color: rgba(0, 0, 0, 0.601);
-    text-align: center;
-}
-#titulo{
-    text-align: left;
-    margin: auto;
-    width: 40vw;
-    text-transform: uppercase;
-    color: white;
-    font-size: 7vh;
-    margin-top: 15vh;
-    font-weight: bold;
-}
-#texto{
-    width: 40vw;
-    font-size: 2vh;
-    color: white;
-    margin: auto;
-    margin-top: 10vh;
-    text-align: left;
-}
-#bt{
-    font-size: 2.5vh;
-    margin: auto;
-    width: 20vw;
-    height:7vh;
-    background-color: #006403;
-    color: white;
-    text-align: left;
-    margin-top: 10vh;
-    margin-right: 24vw;
-    border-radius: 1vh;
-    padding: 1vh;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-#bt:active{
-    background-color: #004702e4;
-    color: rgba(255, 255, 255, 0.819);
+    body{
+        margin: 0px;
+        border: none;
+        height: 95vh;
+        background-image: url('imgs/fundo_problemas.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #caixa{
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        right: 0pc;
+        background-color: rgba(0, 0, 0, 0.601);
+        text-align: center;
+    }
+    #titulo{
+        text-align: left;
+        margin: auto;
+        width: 40vw;
+        text-transform: uppercase;
+        color: white;
+        font-size: 7vh;
+        margin-top: 15vh;
+        font-weight: bold;
+    }
+    #texto{
+        width: 40vw;
+        font-size: 2vh;
+        color: white;
+        margin: auto;
+        margin-top: 10vh;
+        text-align: left;
+    }
+    #bt{
+        font-size: 2.5vh;
+        margin: auto;
+        width: 20vw;
+        height:7vh;
+        background-color: #006403;
+        color: white;
+        text-align: left;
+        margin-top: 10vh;
+        margin-right: 24vw;
+        border-radius: 1vh;
+        padding: 1vh;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    #bt:active{
+        background-color: #004702e4;
+        color: rgba(255, 255, 255, 0.819);
+    }
 }

@@ -163,30 +163,33 @@ body {
 /* Responsividade para tablets */
 @media screen and (max-width: 768px) {
     #barra_de_cima{
+        position: fixed;
+        width: 100vw;
+        height:10vh;
         display: flex;
         flex-direction: row;
-        width: 100vw;
-        height: 10vh;
-        background-color: white;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 1vh black;
         text-align: center;
-        margin: auto;
-        position: fixed;
-        top: 0px;
-        color: black;
     }
-
-    .guia {
-        font-size: 2vw;
-    }
-    
     #logo{
+        margin-left: auto;
+        margin-right: 2vw;
         width: 6vw;
         height: 6vw;
     }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 1vh;
+        text-decoration: none;
+        color: black;
+    }
 
     #titulo {
-        font-size: 7vw;
-        top: 15vh;
+        font-size: 6vw;
+        margin-top: 15vh;
     }
 
     #titulo_cp {
@@ -199,7 +202,9 @@ body {
     }
 
     #objeto {
-        font-size: 3.5vh;
+        font-size: 2.5vh;
+        margin-top: 5vh;
+        font-weight: bold;
     }
 
     #descriçao {
@@ -224,19 +229,25 @@ body {
         box-shadow: 0px 0px 1vh black;
         text-align: center;
     }
-
-    .guia {
-        font-size: 2.5vw;
-    }
     #logo{
-        margin-left: 1vh;
+        margin-left: auto;
+        margin-right: 2vw;
         width: 6vw;
         height: 6vw;
     }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 1vh;
+        text-decoration: none;
+        color: black;
+    }
 
     #titulo {
-        font-size: 8vw;
-        top: 12vh;
+        font-size: 10vw;
+        margin-top: 15vh;
+        font-weight: bold;
     }
 
     #titulo_cp {
@@ -249,8 +260,9 @@ body {
     }
 
     #objeto {
-        font-size: 3vh;
+        font-size: 2vh;
         margin-top: 5vh;
+        font-weight: bold;
     }
 
     #descriçao {

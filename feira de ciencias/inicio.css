@@ -10,6 +10,33 @@
         margin: 0px;
         border: none;
     }
+
+    #barra_de_cima{
+        position: fixed;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        background-color: transparent;
+        text-align: center;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: 2vw;
+        width: 6vw;
+        height: 6vw;
+    }
+ 
+    .guia,#logo{
+        font-size: 2.5vw;
+        margin: auto;
+        margin-left: 1vh;
+        text-decoration: none;
+        color: white;
+    }
+
+
     #computador{
         display: none;
         visibility:collapse;
@@ -73,26 +100,6 @@
         left: 48vw;
         text-shadow:black 0px 0px 0.5vw;
     }
-    #logo{
-        width: 12vw;
-        height: 12vw;
-    }
-    #cima{
-        display: flex;
-        flex-direction: row;
-        font-size: 2.5vw;
-        color: white;
-        margin: 0pc;
-    }
-    .log,#logo_cima{
-        margin: auto;
-        color: white;
-        text-decoration: none;
-    }
-    .log:hover{
-        text-decoration:underline;
-    }
-
 
   }
 
