@@ -65,24 +65,31 @@
     #titulo{
         font-size: 4vh;
         width: 90vw;
-        margin: auto;
-        margin-top: 12vh;
+        position: absolute;
+        top: 10vh;
+        left: 5vw;
+
         text-align: left;
         text-transform: uppercase;
         font-weight: bold;
     }
     #texto{
         margin: auto;
-        margin-top: 3vh;
+        position: absolute;
+        top: 25vh;
+        left: 5vw;
         text-align: left;
-        font-size: 3vw;
-        width: 90vw;
+        font-size: 4vw;
+        width: 94vw;
     }
     #bt{
-        width: 60vw;
-        font-size: 2.9vh;
-        height: 10vh;
-        margin-top: 6vh;
+        display: none;
+        width: 70vw;
+        font-size: 2.2vh;
+        height: 6vh;
+        position: absolute;
+        top: 75vh;
+        left: 5vw;
         margin-left:4vw;
         background-color: #006403;
         text-transform: uppercase;
@@ -142,7 +149,7 @@
         font-size: 4vh;
         width: 90vw;
         position: absolute;
-        top: 3vh;
+        top: 10vh;
         left: 5vw;
 
         text-align: left;
@@ -159,12 +166,12 @@
         width: 94vw;
     }
     #bt{
-        
+        display: none;
         width: 70vw;
         font-size: 2.2vh;
         height: 6vh;
         position: absolute;
-        top: 70vh;
+        top: 90vh;
         left: 5vw;
         margin-left:4vw;
         background-color: #006403;
@@ -243,6 +250,7 @@
         animation: inicio 2s;
     }
     #bt{
+        display: none;
         font-size: 2.5vh;
         margin: auto;
         width: 20vw;

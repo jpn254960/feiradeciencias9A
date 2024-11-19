@@ -357,7 +357,7 @@
         height: 10vw;
         background-color: wheat;
         position: absolute;
-        top: 70vh;
+        top: 65vh;
         left: 74vw;
         border-radius: 1vh;
         object-fit: cover;
@@ -365,14 +365,14 @@
     }
     #passar{
         position: absolute;
-        top: 65vh;
+        top: 60vh;
         left: 90vw;
         font-size: 5vw;
         color: rgba(255, 255, 255, 0.678);
     }
     #numero{
         position: absolute;
-        top: 65vh;
+        top: 60vh;
         left: 70vw;
         font-size: 5vw;
         color: rgba(255, 255, 255, 0.678);
