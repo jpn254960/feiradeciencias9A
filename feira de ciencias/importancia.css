@@ -15,6 +15,18 @@
         opacity: 0;
     }
 }
+@keyframes movimento {
+    0%{
+        left: -100vw;
+    }20%{
+        left: -78vw;
+    }50%{
+        left: -45vw;
+    }100%{
+        left: 10vw;
+    }
+
+}
 /* mobile */
 @media (max-width: 1024px){
     body{
@@ -137,6 +149,7 @@
         position: absolute;
         top: 15vh;
         left: 10vw;
+        animation: movimento 0.6s;
     }
     #titulo1{
         font-size: 2vw;
