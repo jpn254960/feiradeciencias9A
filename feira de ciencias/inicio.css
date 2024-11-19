@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+*{
+    animation: inicio 0.5s;
+}
+@keyframes inicio {
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+@keyframes rodar {
+    to{
+        transform: rotate(0deg);
+    }from{
+        transform: rotate(360deg);
+    }
+}
 @media (max-width: 1024px) {
     body {
         background-color: #4c7d59;
@@ -48,6 +65,7 @@
         position: absolute;
         left: 20vw;
         top: 8vh;
+        animation: rodar 0.8s;
     }
     #titulo1_mobile_inicio{
         color:#ffefca;
@@ -104,7 +122,7 @@
   }
 
   /* Estilos para desktops */
-  @media (min-width: 1025px) {
+@media (min-width: 1025px) {
     body{
         background-color: white;
         border: none;
@@ -114,6 +132,7 @@
         font-weight: 600;
         font-style: normal;
         cursor: default;
+        overflow: hidden;
     }
     #mobile{
         display: none;
@@ -158,6 +177,7 @@
         margin-bottom: 0px;
         margin-right: 0px;
         object-fit: cover;
+        animation: rodar 0.8s;
     }
     #logo_titulo{
         width: 12vw;

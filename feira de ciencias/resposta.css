@@ -7,6 +7,15 @@
     font-style: normal;
     overflow-x: hidden;
     color: black;
+    animation: inicio 0.5s;
+}
+@keyframes inicio {
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
 }
 
 #titulo {
@@ -17,6 +26,7 @@
     transform: translateX(-50%);
     text-align: center;
     color: white;
+    animation: none;
 }
 body {
     border: none;
@@ -24,6 +34,7 @@ body {
 }
 
 #barra_de_cima {
+    animation: none;
     display: flex;
     flex-direction: row;
     width: 100vw;
