@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="contatos.css">
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+</head>
+<body>
+    <img src="imgs/fundo_contatos.png" alt="d" id="fundo">
+    <h1 id="bt_barra" onclick="abrir()">=</h1>
+    <section id="barra" class="barra">
+        <a href="index.html" id="icon1" class="icons">sobre</a>
+        <a href="avaliações.html" id="icon1" class="icons">avaliações</a>
+        <a href="contatos.html" id="icon1" class="icons">contatos</a>
+        <a href="galeria_obras.html" id="icon1" class="icons">apartamentos</a>
+        <a href="galeria_escola.html" id="icon1" class="icons">escolas</a>
+    </section>
+
+    <section id="textos">
+        <h1 id="titulo1" class="titulos">faça já seu</h1>
+        <h1 id="titulo2" class="titulos"> oraçamento</h1>
+        <a href="https://www.instagram.com/tuttofareformas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" id="contato">@tuttofareformas
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=reformastuttofa@gmail.com.br$&su=Solicitação%20de%20orçamento" target="_blank" id="contato">reformastuttofa@gmail.com</a>
+        <a href="https://wa.me/+5511947950630" target="_blank" id="contato">+55 (11) 99343-6884</a>
+</section>
+<script>
+    function abrir(){
+    var barra=document.getElementById('barra')
+    var verificador= barra.className
+    if(verificador=='barra' || verificador=='barra_0'){
+        barra.className='barra_1'
+        barra.style.transform='translateX(0%)'
+        document.getElementById('bt_barra').style.color='white'   
+    }
+    else if (verificador=='barra_1'){
+            barra.className='barra_0'
+            barra.style.transform='translateX(100%)'
+        document.getElementById('bt_barra').style.color='black'   
+    }
+}
+</script>
+</body>
+</html>

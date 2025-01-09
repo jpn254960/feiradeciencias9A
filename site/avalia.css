@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:"width" 100;
+}
+
+@keyframes entrar{
+    0%{transform: translateX(100%);}
+    20%{transform: translateX(80%);}
+    40%{transform: translateX(60%);}
+    60%{transform: translateX(40%);}
+    80%{transform: translateX(20%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes sair{
+    0%{transform: translateX(0%);}
+    20%{transform: translateX(20%);}
+    40%{transform: translateX(40%);}
+    60%{transform: translateX(60%);}
+    80%{transform: translateX(80%);}
+    100%{transform: translateX(100%);}
+    
+}
+
+
+@media (max-width:678px){
+    #comentario{
+        height: 24vh;
+    }
+}
+
+/* Estilos para celular */
+@media (max-width: 1024px) {
+    /* Adicione seus estilos para celular aqui */
+    body {
+        margin: 0px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+    }
+    /* parte da barra */
+    #barra{
+        display: none;
+    }
+    /* parte dos comentarios */
+    #comentarios{
+        padding: 2vh;
+        box-sizing: border-box;
+        width: 75vw;
+        height: 28vh;
+        background-color: white;
+        box-shadow: 0px 0px 1vw black;
+        margin: auto;
+        border-radius: 1.2vh;
+    }
+    #nome{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 5vw;
+        margin-left: 2vw;
+        margin-bottom: 1vw;
+    }
+    #avalia{
+        line-height: 1vh;
+        margin-left: 2vw;
+        font-size: 3.3vw;
+        margin-top: 0vw;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #descriçao::before,#descriçao::after{
+        content: '"';
+    }
+    #descriçao{
+        margin-top: 10vw;
+        font-weight: bold;
+        margin-top: 2vh;
+        font-size: 3.2vw;
+        margin-left: 2vw;
+    }
+    /* titulos */
+    #parte_cima{
+        margin-top: 15vh;
+        text-align: center;
+        font-size: 5vw;
+    }
+    #texto{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #exelente{
+        font-weight: bold;
+        height: 10vh;
+        width: 20vw;
+        background-color: black;
+        color: white;
+    }
+    /* media final */
+    #estrelas{
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 65vh;
+        left: 10vw;
+        font-size: 3vw;
+        width: 80vw;
+    }
+    #media_av{
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .stars{
+        margin-top: 1vh;
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    /* parte da barra mobiel */
+    #bt_barra{
+        position: absolute;
+        font-size: 10vw;
+        top: 0vh;
+        right: 1vw;
+        margin:0px;
+        z-index: 4;
+        animation: color 2s;
+        cursor: pointer;
+    }
+    #barra{
+        transform: translateX(100%);
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height: 100vh;
+        background-color: black;
+        justify-content: space-between;
+        z-index: 3;
+        padding: 5vh;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 1vw black;
+    }
+    .barra_0{
+        animation: sair 0.3s;
+    }
+    .barra_1{
+        animation: entrar 0.3s;
+    }
+    .icons{
+        margin: auto;
+        width: 40vw;
+        font-size: 2vh;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .icons:hover{
+        color: rgba(255, 255, 255, 0.582);
+    }
+}
+
+/* Estilos para computador */
+@media (min-width: 1025px) {
+    /* Adicione seus estilos para computador aqui */
+    #bt_barra{
+        display: none;
+    }
+    #tela_preta{
+        display: none;
+    }
+    body {
+        background-color: white;
+    }
+    #barra{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 50vw;
+        height: 12vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+    .icons{
+        font-size: 1.2vw;
+        margin-left: 1vw;
+        margin-top: 5vh;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .icons:active{
+        color: rgba(0, 0, 0, 0.568);
+        text-decoration: none;
+    }
+    .icons:hover{
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.836);
+    }
+    #texto{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 4vw;
+        width: 50vw;
+        margin-left: 30vw;
+        text-align: left;
+        margin-top: 3vh;
+    }
+    #exelente{
+        font-weight: bold;
+        width: 100vw;
+        height: 10vh;
+        background-color: black;
+        color: white;
+    }
+    #comentarios{
+        padding: 0.5vw;
+        width: 40vw;
+        height: 30vh;
+        margin: auto;
+        box-shadow: 0px 0px 1vw black;
+        box-sizing: border-box;
+        border-radius: 2vw;
+    }
+    #nome{
+        margin-left: 1vw;
+        font-size: 2vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    #avalia{
+        margin-left: 1vw;
+        font-size: 1vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 1vh;
+        }
+    #descriçao::before, #descriçao::after {
+        content: '"';
+    }
+    #descriçao{
+        margin-left: 1vw;
+        font-size: 1.5vw;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .stars{
+        margin-top: 0px;
+        margin: auto;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .star1{
+        color: black;
+    }
+    .star0{
+        color:rgba(0, 0, 0, 0.548) ;
+    }
+    #media_av{
+        margin-bottom: 0px;
+        margin-top: 5vh;
+        text-align: center;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #bt_avaliar{
+        cursor: pointer;
+        text-align: center;
+        line-height: 10vh;
+        position: absolute;
+        left: 65vw;
+        top: 72vh;
+        width: 15vw;
+        height: 10vh;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+    }
+}

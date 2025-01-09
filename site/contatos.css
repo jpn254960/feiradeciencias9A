@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    overflow: hidden;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:"width" 100;
+}
+* {
+    box-sizing: border-box;
+}
+@keyframes entrar{
+    0%{transform: translateX(100%);}
+    20%{transform: translateX(80%);}
+    40%{transform: translateX(60%);}
+    60%{transform: translateX(40%);}
+    80%{transform: translateX(20%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes sair{
+    0%{transform: translateX(0%);}
+    20%{transform: translateX(20%);}
+    40%{transform: translateX(40%);}
+    60%{transform: translateX(60%);}
+    80%{transform: translateX(80%);}
+    100%{transform: translateX(100%);}
+    
+}
+
+@media (min-width:1025px){
+    #bt_barra{
+        display: none;
+    }
+    body{
+        background-color: white;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    #fundo{
+       
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right:-10vw;
+    }
+    #textos{
+        position: absolute;
+        top: 20vh;
+        left: 25vh;
+        width: 40vw;
+    }
+    .titulos{
+        font-size: 4vw;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+    #titulo1{
+        margin-left: 14vw;
+        margin-bottom: 0px;
+    }
+    #titulo2{
+        margin-top: 0pc;
+        margin-bottom: 3vh;
+
+    }
+    #contato{
+        text-decoration: none;
+        font-size: 1.5vw;
+        color: black;
+        display:flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-left: 4vw;
+    }
+    /* parte baixo */
+    #tpc{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2vw;
+        color: black;
+        margin-top: 2vh;
+        text-align: center;
+    }
+    #barra{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 50vw;
+        height: 12vh;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+    .icons{
+        font-size: 1.2vw;
+        margin-left: 1vw;
+        margin-top: 5vh;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .icons:active{
+        color: rgba(0, 0, 0, 0.568);
+        text-decoration: none;
+    }
+    .icons:hover{
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.836);
+    }
+}
+@media (max-width:1024px){
+    body{
+        overflow: hidden;
+        border: none;
+        margin: 0px;
+    }
+    #fundo{
+        width: 100vw;
+        object-fit: cover;
+        height: 50vh;
+        position: absolute;
+        top: 0px;   
+    }
+
+    /* textos */
+    #textos{
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 0px;
+    }
+    #contato{
+        font-size: 4vw;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20vw;
+        margin-top: 1vw;
+        text-align: left;
+        text-decoration: underline;
+    }
+    .titulos{
+        font-size: 6vw;
+        margin-left: 20vw;
+        font-weight: bold;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+    #titulo1{
+        margin-top: 10vh;
+         
+    }
+    #titulo2{
+        margin-top: 0px;
+        margin-bottom: 2vh;
+        
+    }
+    /* parte icons */
+    #bt_barra{
+        cursor: pointer;
+        position: absolute;
+        font-size: 10vw;
+        top: 0vh;
+        right: 1vw;
+        margin:0px;
+        z-index: 4;
+        animation: color 2s;
+    }
+    
+    #barra{
+        transform: translateX(100%);
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height: 100vh;
+        background-color: black;
+        justify-content: space-between;
+        z-index: 3;
+        padding: 5vh;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 1vw black;
+    }
+    .barra_0{
+        animation: sair 0.3s;
+    }
+    .barra_1{
+        animation: entrar 0.3s;
+    }
+    .icons{
+        margin: auto;
+        width: 40vw;
+        font-size: 2vh;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .icons:hover{
+        color: rgba(255, 255, 255, 0.582);
+    }
+}

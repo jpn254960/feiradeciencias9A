@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@keyframes entrar{
+    0%{transform: translateX(100%);}
+    20%{transform: translateX(80%);}
+    40%{transform: translateX(60%);}
+    60%{transform: translateX(40%);}
+    80%{transform: translateX(20%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes sair{
+    0%{transform: translateX(0%);}
+    20%{transform: translateX(20%);}
+    40%{transform: translateX(40%);}
+    60%{transform: translateX(60%);}
+    80%{transform: translateX(80%);}
+    100%{transform: translateX(100%);}
+    
+}
+
+*{
+    overflow: hidden;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:"width" 100;
+}
+
+@media (min-width:1025px){
+    #bt_barra{
+        display: none;
+    }
+    body{
+        overflow: hidden;
+        margin: 0px;
+        border: none;
+        background-color: white;
+    }
+    #fundo_escola{
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #titulos{
+        width: 50vw;
+        position: absolute;
+        top: 20vh;
+        left: 25vw;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #t1{
+        color: white;
+        margin-bottom: 0px;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    #t2{
+        line-height: 10vh;
+        margin-left: 5vw;
+        text-align: center;
+        height: 10vh;
+        width: 40vw;
+        background-color: white;
+        color: black;
+        margin-top: 1vh;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    #bt_painel{
+        text-transform: uppercase;
+        line-height: 15vh;
+        text-align: center;
+        font-size: 2.3vw;
+        font-weight: bold;
+        height: 15vh;
+        width: 25vw;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 1vh;
+        position: absolute;
+        top: 60vh;
+        left: 38vw;
+        
+    }
+    #bt_painel:hover{
+        transform: background-color 1s;
+        background-color: rgba(0, 0, 0, 0.959);
+    }
+    #barra{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 50vw;
+        height: 12vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+    .icons{
+        font-size: 1.2vw;
+        margin-left: 1vw;
+        margin-top: 5vh;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .icons:active{
+        color: rgba(0, 0, 0, 0.568);
+        text-decoration: none;
+    }
+    .icons:hover{
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.836);
+    }
+    /* painel */
+    .tela_preta1{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.582);
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+    }
+    .tela_preta0{
+        background-color: transparent;
+
+    }
+    .painel_1{
+        animation: surgir 0.35s;
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        width: 96vw;
+        height: 96vh;
+        z-index: 2;
+        background-color: rgb(247, 247, 247);
+        box-shadow: 0px 0px 0.4vh black;
+        border-radius:1.4vh;
+        text-align: center;
+    }
+    .painel_0{
+        display: none;
+    }
+    
+    /* imagens do painel */
+    #imgs_gg{
+        box-shadow: 0px 0px 0.2vh black;
+        background-color: rgb(255, 255, 255);
+        width: 45vw;
+        height: 63vh;
+        margin-top: 12vh;
+        object-fit: cover;
+        border-radius: 1vh;
+    }
+    .passar_voltar{
+        cursor: pointer;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 100;      
+        color: rgba(0, 0, 0, 0.705);
+        font-size:2vw;
+        width: 3vw;
+        height: 3vw;
+        text-align: center;
+        border-radius: 100%;
+        border: 0.2vh rgba(0, 0, 0, 0.527) solid;
+        margin: 0px;
+        line-height: 3vw; 
+    }
+    #bt_passa{
+        position: absolute;
+        top: 40vh;
+        right: 5vw;
+    }
+    #bt_volta{
+        position: absolute;
+        top: 40vh;
+        left: 5vw;
+    }
+    #bt_fechar{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 100;      
+        font-size:1.3vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        position: absolute;
+        top: 1vh;
+        right: 2vw;
+        width: 5vw;
+        height: 6vh;
+        line-height: 3vw;
+        border-radius:0.5vw;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    #bt_fechar:hover{
+        background-color: rgba(0, 0, 0, 0.089);
+
+    }
+    #text_numeral{
+        font-size: 1.5vw;
+        font-weight: bold;
+        position: absolute;
+        top: 1vh;
+        left: 47vw;
+    }
+
+}
+@media (max-width:1024px){
+    body{
+        margin: 0px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+    }
+    #fundo_escola{
+        position: absolute;
+        top: 0pc;
+        left: 0pc;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        
+    }
+    #titulos{
+        position: absolute;
+        top: 20vh;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+    #t1{
+        font-size:8vw;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    #t2{
+        line-height: 10vh;
+        font-size: 6vw;
+        font-weight: bold;
+        margin-top: 1vh;
+        background-color: white;
+        color: black;
+        width: 80vw;
+        height: 10vh;
+        text-align: center;
+        margin-left: 10vw;  
+    }
+    #bt_painel{
+        text-transform: uppercase;
+        line-height: 10vh;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: bold;
+        height: 10vh;
+        width: 55vw;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 1vh;
+        position: absolute;
+        top:60vh;
+        left: 22vw;
+    }
+    #bt_painel:hover{
+        transform: background-color 1s;
+        background-color: rgba(0, 0, 0, 0.959);
+    }
+    /* parte do painel */
+    .tela_preta1{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.582);
+        position: absolute;
+        top: 0pc;
+        z-index: 5;
+    }
+    .painel_1{
+        font-size: 2vh;
+        animation: surgir 0.35s;
+        width: 94vw;
+        height: 88vh;
+        background-color: rgb(241, 241, 241);
+        margin: auto;
+        position: absolute;
+        top: 3vh;
+        left: 3vw;
+        z-index: 5;
+        box-shadow: 0px 0px 1vw black;
+        border-radius: 1vh;
+    }
+    .painel_0{
+        display: none;
+    }
+    #text_numeral{
+        text-align: center;
+        margin-top: 10vh;
+    }
+    #bt_fechar{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 100;
+        height: 8vh;
+        width: 10vw;
+        border-radius: 2vw;
+        text-align: center;
+        line-height: 8vh;  
+        text-transform: uppercase;   
+        position: absolute;
+        top: 0vh;
+        right: 1vw;
+    }
+    #bt_fechar:hover{
+        background-color: rgba(0, 0, 0, 0.089);
+    }
+    #bt_fechar:active{
+        background-color: rgba(0, 0, 0, 0.089);
+    }
+
+    #imgs_gg{
+        position: absolute;
+        top: 20vh;
+        width: 94vw;
+        height: 50vh;
+        object-fit: cover;
+        box-shadow: 0px 0px 1vw black;
+    }
+    .passar_voltar{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 100;      
+        position: absolute;
+        top: 15vh;
+        line-height: 50vh;
+        height: 50vh;
+        width: 47vw;
+        font-size: 10vw;
+        color: white;
+        text-shadow: 0px 0px 1vw black;
+        cursor: pointer;
+        user-select: none;
+    }
+    #bt_passa{
+        right: 1vw;
+        text-align: right;
+    }
+    #bt_volta{
+        left: 1vw;
+        text-align: left;
+    }
+    /* parte da barra de cima */
+    #barra{
+        transform: translateX(100%);
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height: 100vh;
+        background-color: black;
+        justify-content: space-between;
+        z-index: 3;
+        padding: 5vh;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 1vw black;
+    }
+    .barra_0{
+        animation: sair 0.3s;
+    }
+    .barra_1{
+        animation: entrar 0.3s;
+    }
+    .icons{
+        margin: auto;
+        width: 40vw;
+        font-size: 2vh;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .icons:hover{
+        color: rgba(255, 255, 255, 0.582);
+    }
+    #bt_barra{
+        cursor: pointer;
+        position: absolute;
+        font-size: 10vw;
+        top: 0vh;
+        right: 1vw;
+        margin:0px;
+        z-index: 4;
+        animation: color 2s;
+    }
+}

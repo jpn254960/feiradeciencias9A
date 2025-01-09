@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    overflow: hidden;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+/*computador */
+@media (min-width:1025px){
+    body{
+        margin: 0pc;
+        border: none;
+        background-color: aliceblue;
+    }
+    #centro{
+        position: absolute;
+        top:35vh;
+        left: 75vw;
+        width: 20vw;
+        margin: auto;
+        text-align: center;
+    }
+    #titulo{
+        text-align: center;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    #txt{
+        margin-top: 0.4vh;
+        font-size: 1.5vw;
+    }
+    #galeria{
+        margin: auto;
+        margin-top: 15vh;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 2vw;
+        width: 45vw;
+        margin-bottom: 2vh;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 2%;
+        box-shadow: 0px 0px 1vw black;
+
+    }
+    .img:active{
+        transition: opacity 0.5;
+        opacity: 50%;
+    }
+}
+/* tablete */
+@media (max-width:1024px){
+    body{
+        background-color: aquamarine;
+    }
+    #titulo{
+        font-size: 4vw;
+        text-align: center;
+    }
+    #galeria{
+        margin: auto;
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        width: 70vw;
+        gap: 2vw;
+        
+    }
+}
+/* celular */
+@media (max-width:768px){
+    body{
+        background-color: red;
+    }
+}
