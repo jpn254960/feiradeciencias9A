@@ -116,6 +116,14 @@
         left: 50vw;
     }
 }
+@media (min-width:500px){
+    body{
+        background-color: white;
+    }
+    #fundo{
+        margin-left: 20vw;
+    }
+}
 @media (max-width:1024px){
     body{
         overflow: hidden;
@@ -123,18 +131,16 @@
         margin: 0px;
     }
     /* parte do folder */
-    #fundo{
-        position: absolute;
-        top: 3vh;
-        right: -35vw;
-        height: 70vh;      
+    #fundo{ 
+        height: 50vh;
+        margin-top:14vh;
         object-fit: cover;  
     }
     #titulos{
         text-shadow: 0px 0px 0.3vw black;
         position: absolute;
-        left: 10vw;
-        top: 5vh;
+        left: 8vw;
+        top: 11vh;
         text-transform: uppercase;
         font-size: 5vw;
     }
@@ -218,9 +224,9 @@
         font-weight: bold;
         position: absolute;
         text-decoration: none;
-        top: 40vh;
+        top: 41vh;
         width: 25vw;
-        height: 30vh;
+        height: 10vh;
         background-color: black;
         color: white;
         line-height: 10vh;
