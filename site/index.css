@@ -116,7 +116,7 @@
         left: 50vw;
     }
 }
-@media (min-width:500px){
+@media (min-width:500px ) and (max-width: 1024px){
     body{
         background-color: white;
     }
@@ -183,6 +183,7 @@
     }
     .barra_0{
         animation: sair 0.3s;
+        display: none;
     }
     .barra_1{
         animation: entrar 0.3s;

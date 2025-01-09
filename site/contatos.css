@@ -197,6 +197,8 @@
     }
     .barra_0{
         animation: sair 0.3s;
+        display: none;
+
     }
     .barra_1{
         animation: entrar 0.3s;
