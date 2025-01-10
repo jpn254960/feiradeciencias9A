@@ -26,6 +26,7 @@
 }
 
 *{
+    touch-action: none;
     user-select: none;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;

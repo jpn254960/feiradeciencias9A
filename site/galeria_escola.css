@@ -17,8 +17,8 @@
     100%{transform: translateX(100%);}
     
 }
-
 *{
+    touch-action: none;
     overflow: hidden;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
