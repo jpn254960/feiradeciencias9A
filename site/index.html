@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tutto fa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
 </head>
-<body> 
+<body>
     <h1 id="bt_barra" onclick="abrir()">=</h1>
     <section id="barra" class="barra">
         <a href="index.html" id="icon1" class="icons">sobre</a>
@@ -16,17 +16,26 @@
         <a href="galeria_obras.html" id="icon1" class="icons">apartamentos</a>
         <a href="galeria_escola.html" id="icon1" class="icons">escolas</a>
     </section>
-    <section id="imagem">
-        <img src="imgs/fundo_in.png" alt="" id="fundo">
+    <section id='pagina'>
+        <img src="imgs/obra1.jpeg" alt="" id="fundo">
+        <section id="titulos">
+            <h1 id="t1">tutto fa</h1>
+            <h1 id="t2">reformas</h1>
+            <p id="sub1">a 20 anos Transformamos espaços com excelência e rapidez!</p>
+        </section>
+
+        <!-- parte escolas -->
+        <section id="segunda_tela">
+            <section id="caixa1">
+                <img src="imgs/fundo_2_inicio.png" alt="" id="fundo_2">
+            </section>
+            <div id="trave"></div>
+            <section id="escolas_titulo">
+                <h1 id="t3">Transformamando Escola e tendo Resultados Ainda Mais Rápidos!</h1>
+                <a href="galeria_escola.html" id="link"><h1 id="bt_escolas">Confira Agora!</h1></a>
+            </section>
+        </section>
     </section>
-    <section id="titulos">
-        <h1 id="t1">tutto fa</h1>
-        <h1 id="t2">reformas</h1>
-    </section>
-    <section id="subtitulo">
-        <h1 id="t3">Especialista em reformas de apartamentos, escolas e hospitais, com a qualidade e segurança que você precisa</h1>
-    </section>
-    <a href="galeria_escola.html" id="bt_escolas">escolas > </a>
 </body>
 <script src="index.js"></script>
 </html>
