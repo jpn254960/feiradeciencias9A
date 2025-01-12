@@ -1,7 +1,6 @@
 function abrir(){
     var barra=document.getElementById('barra')
     var verificador= barra.className
-    var display=document.getElementById('pagina').style.display
     if(verificador=='barra' || verificador=='barra_0'){
         barra.className='barra_1'
         barra.style.transform='translateX(0%)'
