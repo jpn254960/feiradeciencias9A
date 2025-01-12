@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     user-select: none;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -118,22 +121,24 @@
     }
 }
 @media (min-width:500px ) and (max-width: 1024px){
-    body{
-        background-color: white;
-    }
     #fundo{
+        background-color: aqua;
         margin-left: 20vw;
+        height: calc(25vmin + 10vh);
+        width: auto;        
     }
 }
 @media (max-width:1024px){
     body{
+        background-color: blueviolet;
         overflow: hidden;
         border: none;
         margin: 0px;
     }
     /* parte do folder */
     #fundo{ 
-        height: 50vh;
+        height: calc(50vmin + 25vh);
+        margin: auto;
         margin-top:14vh;
         object-fit: cover;  
     }
@@ -181,6 +186,8 @@
         padding: 5vh;
         box-sizing: border-box;
         box-shadow: 0px 0px 1vw black;
+        will-change: transform;
+        transition: transform 0.3s ease-in-out;
     }
     .barra_0{
         animation: sair 0.3s;
@@ -227,6 +234,7 @@
         position: absolute;
         text-decoration: none;
         top: 41vh;
+        left: 0px;
         width: 25vw;
         height: 10vh;
         background-color: black;

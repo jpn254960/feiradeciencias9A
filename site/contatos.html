@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
     <link rel="stylesheet" href="contatos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -42,7 +41,10 @@
             barra.style.transform='translateX(100%)'
         document.getElementById('bt_barra').style.color='black'   
     }
-}
+    }
+    elemento.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    }, { passive: false });
 </script>
 </body>
 </html>

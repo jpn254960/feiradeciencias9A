@@ -6,8 +6,9 @@
     font-weight: 450;
     font-style: normal;
     font-variation-settings:"width" 100;
-}
-* {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     touch-action: none;
     box-sizing: border-box;
 }
