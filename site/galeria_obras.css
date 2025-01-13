@@ -26,10 +26,11 @@
 }
 
 *{
+    
+    overflow: hidden;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    touch-action: none;
     user-select: none;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -410,7 +411,7 @@
         position: absolute;
         font-size: 10vw;
         top: 0vh;
-        right: 1vw;
+        right: 2vw;
         margin:0px;
         z-index: 4;
         animation: color 2s;

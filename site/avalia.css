@@ -5,13 +5,13 @@
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    font-variation-settings:"width" 100;
+    font-variation-settings: "width" 100;
     touch-action: none;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    touch-action: none;
     box-sizing: border-box;
+    user-select: none;
 }
 
 @keyframes entrar{
@@ -130,7 +130,7 @@
         position: absolute;
         font-size: 10vw;
         top: 0vh;
-        right: 1vw;
+        right: 2vw;
         margin:0px;
         z-index: 4;
         animation: color 2s;
