@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apartamentos</title>
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="galeria_obras.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="tela_preta" class="tela_preta0" onclick="t()"></section>
+    <h1 id="bt_barra" onclick="abrir()">=</h1>
+    <section id="barra" class="barra">
+        <a href="index.html" id="icon1" class="icons">sobre</a>
+        <a href="avaliações.html" id="icon1" class="icons">avaliações</a>
+        <a href="contatos.html" id="icon1" class="icons">contatos</a>
+        <a href="galeria_obras.html" id="icon1" class="icons">apartamentos</a>
+        <a href="galeria_escola.html" id="icon1" class="icons">escolas</a>
+    </section>
+
+    <section id="painel" class="painel_0">
+        <h1 id="text_numeral"></h1>
+        <h1 id="bt_fechar" onclick="fechar_painel()">X</h1>
+        <img src="imgs/obra1.jpeg" alt="imagem" id="imgs_gg">
+        <h1 id="bt_passa" class="passar_voltar" onclick="passar(1)">> </h1>
+        <h1 id="bt_volta" class="passar_voltar" onclick="passar()"> < </h1>
+    </section>
+
+    <h1 id="tpc">apartamentos</h1>
+    
+    <section id="titulos">
+        <h1 id="ti">seu ap do seu jeito</h1>
+        <p id="resumo">realizamos obras de alto padrão, deixando seu ap do jeito que você sonha</p>
+    </section>
+    
+    <h1 id="bt_fotos" onclick="fechar_painel()">veja mais fotos</h1>
+    
+    <section id="galeria">
+        <img id="img_1" src="imgs/obra1.jpeg" alt="" class="img" onclick="fechar_painel()">
+        <img id="img_2" src="imgs/obra2.jpeg" alt="" class="img" onclick="fechar_painel()">
+        <img id="img_3" src="imgs/obra4.jpeg" alt="" class="img" onclick="fechar_painel()">
+    </section>
+
+</body>
+<script src="galeria_obras.js"></script>
+</html>
