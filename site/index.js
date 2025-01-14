@@ -18,3 +18,11 @@ function abrir(){
         document.getElementById('pagina').style.display='' || 'block'
     }
 }
+setTimeout(function(){
+    document.getElementById('inicial').style.width='0vw'
+    document.getElementById('inicial').style.animation='fechar 1s'
+    document.getElementById('pagina').style.display='' || 'block'
+},2000)
+setTimeout(function(){
+    document.getElementById('logo_inicio').style.animation='surgir 2s'
+},500)

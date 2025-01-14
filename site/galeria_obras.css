@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@keyframes surgir_t{
+    0% { opacity: 0; }
+    5% { opacity: 0.1; }
+    10% { opacity: 0.2; }
+    15% { opacity: 0.3; }
+    20% { opacity: 0.4; }
+    25% { opacity: 0.5; }
+    30% { opacity: 0.6; }
+    35% { opacity: 0.7; }
+    40% { opacity: 0.8; }
+    45% { opacity: 0.9; }
+    50% { opacity: 1; }
+}
+h1,p,img{
+    animation: surgir_t 1s;
+}
+
 
 @keyframes surgir{
     0%{opacity: 0%;}
@@ -408,7 +425,7 @@
     }
     /* Parte barra de cima */
     #bt_barra{
-        position: absolute;
+        position: fixed;
         font-size: 10vw;
         top: 0vh;
         right: 2vw;
@@ -419,7 +436,7 @@
     
     #barra{
         transform: translateX(100%);
-        position: absolute;
+        position: fixed;
         top: 0px;
         text-align: center;
         display: flex;
