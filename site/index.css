@@ -74,6 +74,9 @@ font-variation-settings:"width" 100;
 
 
 @media (min-width:1025px){
+    #inicial{
+        display: none;
+    }
     h1,p{
         animation: surgir 1s;
     }
@@ -82,10 +85,10 @@ font-variation-settings:"width" 100;
         margin: 0px;
     }
     #titulos{
-        width: 60vw;
+        margin-top: 3vh;
+        width: 100vw;        
         height: 100vh;
-        background-color: white;
-        color: black;
+        color: white;
         text-align: center;
         position: absolute;
         top:0px;
@@ -110,18 +113,24 @@ font-variation-settings:"width" 100;
         margin: auto;
         margin-top: 1.5vh;
         font-size: 1.5vw;
-        color: black;
+        color: white;
         width: 30vw;
         font-weight: bold;
         text-transform: uppercase;
     }
     #fundo{
         object-fit: cover;
-        width: 40vw;
+        width: 100vw;
         height: 100vh;
         position: absolute;
         top: 0px;
         right: 0vw;
+        background-image: url('https://source.unsplash.com/1600x900/?nature');
+        height: 100vh;
+        background-attachment: fixed; /* Faz o fundo "grudar" no viewport */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     /* segunda parte */
     #segunda_tela{
@@ -131,6 +140,9 @@ font-variation-settings:"width" 100;
         position: absolute;
         top: 100vh;
         left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        overflow-y: hidden;
     }
     #caixa1{
        width: 40vw;
